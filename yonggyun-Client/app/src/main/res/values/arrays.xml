@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="uploadImages">
+        <item>갤러리에서 선택하기</item>
+        <item>취소</item>
+    </string-array>
+<!--    <item>Click from camera</item>-->
+
+    <string-array name="itemIds">
+        <item>갤러리</item>
+        <item>취소</item>
+    </string-array>
+
+<!--    <string-array name="itemIds">-->
+<!--        <item>gallery_image</item>-->
+<!--        <item>camera_image</item>-->
+<!--        <item>remove_image</item>-->
+<!--    </string-array>-->
+
+</resources>

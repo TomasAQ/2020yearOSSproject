@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NewsActivity"
+    android:orientation="vertical"
+    android:padding="15dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/imageUpload"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/ic_launcher_foreground"
+            />
+        <Button
+            android:id="@+id/btnChoose"
+            android:background="#3b54e2"
+            android:textColor="#fff"
+            android:text="choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnUPload"
+            android:background="#3b54e2"
+            android:textColor="#fff"
+            android:text="upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+<!--        <Button-->
+<!--            android:text="소식 작성"-->
+<!--            android:id="@+id/btn_upload_news"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_move_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="MovePage"
+            android:text="홈"
+            />
+
+        <Button
+            android:id="@+id/btn_move_counseling"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="MovePage"
+            android:text="상담"
+            />
+
+        <Button
+            android:id="@+id/btn_move_news"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="MovePage"
+            android:text="소식"
+            />
+
+        <Button
+            android:id="@+id/btn_move_info_set"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="MovePage"
+            android:text="정보"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

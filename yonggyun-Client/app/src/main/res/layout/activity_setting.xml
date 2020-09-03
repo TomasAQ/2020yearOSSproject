@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SettingActivity"
+    android:orientation="vertical"
+    >
+    <Button
+        android:text="회원정보"
+        android:onClick="movelogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="펫 CCTV 세팅"
+        android:onClick="remote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="펫 CCTV 확인"
+        android:onClick="seebrod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="고양이 찾기"
+        android:onClick="searchcat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="냥냥 셀피"
+        android:onClick="Selfie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+<!--    <Button-->
+<!--        android:text="냥냥 셀피 사진첩"-->
+<!--        android:onClick="showSelfie"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+
+
+</LinearLayout>

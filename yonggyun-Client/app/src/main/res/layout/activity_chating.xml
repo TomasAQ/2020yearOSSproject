@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ChatingActivity"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    >
+    <TextView
+        android:text="상담 주의 사항"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="첫째,자가진료는 오히려 아이에게 위험할 수 있어서 \n상담해드리지 않아요.\n둘째,실명이 공개되닌 예쁜말 부탁드려요.\n셋째,원장님께 감사 인사드리는 센스!\n넷째,동물병원에서 진료받은 내용은 해당 원장님이 \n가장 잘 아시기 때문에 상담해드리지 않아요.\n답변까지는 약 3시간 정도 소요될 수 있어요."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ListView
+        android:id="@+id/lab1_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="16dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#e2e2e2"
+        >
+        <EditText
+            android:id="@+id/lab1_send_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="2dip"
+            android:layout_weight="1"
+            android:hint="메시지 쓰기..."
+            android:background="@null"
+            />
+        <Button
+            android:text="전송"
+            android:id="@+id/lab1_send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+</LinearLayout>

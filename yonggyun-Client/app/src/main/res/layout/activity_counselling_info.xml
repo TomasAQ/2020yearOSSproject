@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CounsellingInfoActivity"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    >
+    <TextView
+        android:text="상담"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="       1. 분류 선택  > "
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  2. 정보 확인  "
+                android:textStyle="bold"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="> 3. 상담 하기 "
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginVertical="10dp"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:text="상담 전 주의사항"
+                android:layout_weight="0.8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:onClick="consentalltrue"
+                android:text="모두 동의 "
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <Switch
+            android:id="@+id/consent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="자가 진료를 하지 않겠습니다."
+            />
+
+        <Switch
+            android:id="@+id/consent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="진료 비용 문의를 하지 않겠습니다."
+            />
+
+        <Switch
+            android:id="@+id/consent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="병원 간 진료 비교를 하지 않겠습니다."
+            />
+        <Switch
+            android:id="@+id/consent4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="예쁜 말만 사용하겟습니다."
+            />
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:text="위 사항이 지켜지지 않을 경우, 상담 중 종료 될 수 있습니다."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="상담 내용"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/consultation_content"
+            android:hint="상담 내용을 입력해주세요, 상담시\n휴대폰번호,실명 등 원치 않는 개인 정보가 \n노출되지 않도록 주의해주세요."
+            android:padding="16dp"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:minLines="6"
+            android:maxLines="8"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:scrollbars="vertical"
+            />
+    <TextView
+        android:text="사진 추가"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <ImageButton
+        android:layout_marginVertical="8dp"
+        android:id="@+id/img_btn_counseling"
+        android:onClick="selectCounselingImg"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_image_black_24dp"
+        android:scaleType="fitXY"
+        />
+    <Button
+        android:onClick="startconsultation"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#F44336"
+        android:text="상담 신청"
+        />
+    </LinearLayout>

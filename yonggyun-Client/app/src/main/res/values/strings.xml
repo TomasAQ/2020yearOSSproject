@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">yonggyun-Client</string>
+    <string name="uploadImages">이미지를 선택해주세요.</string>
+    <string name="msg_loading">Loading...</string>
+</resources>

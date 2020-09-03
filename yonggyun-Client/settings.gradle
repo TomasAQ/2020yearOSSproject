@@ -1,0 +1,2 @@
+rootProject.name='yonggyun-Client'
+include ':app', ':opencv'
